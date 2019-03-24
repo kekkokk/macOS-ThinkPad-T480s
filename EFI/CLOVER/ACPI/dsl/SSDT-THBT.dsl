@@ -38,6 +38,11 @@ DefinitionBlock ("", "SSDT", 2, "hack", "_THBT", 0x00000000)
                 Return (One)
             }
 
+            Method (_STA, 0, NotSerialized)  // _STA: Status
+            {
+                Return (0x0F)
+            }
+
             Device (DSB0)
             {
                 Name (_ADR, Zero)  // _ADR: Address
