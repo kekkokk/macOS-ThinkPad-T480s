@@ -2,6 +2,11 @@
 
 This repository contains a sample configuration to run macOS (Currently Mojave `10.14`) on a Lenovo ThinkPad T480s
 
+## My fork:
+I'ts based on the awesome work of [linusyang92](https://github.com/linusyang92/macOS-ThinkPad-T480s) with some modifications such as:
+- Touchpad driver are now based on `VoodooPS2Controller.kext` +  my fork of `VoodooSMBus.kext` by leo-labs [github branch](https://github.com/kekkokk/VoodooSMBus/tree/add/dynamic_load_config)
+- VirtualSMC is replaced by FakeSMC to enable sensor readings of temp frequency and power consumption 
+
 ## Used Hardware Configuration
 
 - Lenovo ThinkPad T480s
